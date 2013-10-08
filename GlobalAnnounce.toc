@@ -1,0 +1,11 @@
+## Interface: 40300
+## Title: Global Announce |cFF267EFF[Core]|r
+## Notes: Provides abilities for players in a group, raid, guild, or battleground to send you a more noticeable message.
+## Author: Mysticell
+## Version: 0.8.3a
+## SavedVariables: gAnnounceSettings
+## DefaultState: enabled
+## X-eMail: mysticell@warcraft365.com
+SoundLib.lua
+GA_Core.lua
+GA_DisplayFlags.lua

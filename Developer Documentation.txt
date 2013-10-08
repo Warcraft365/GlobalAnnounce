@@ -1,0 +1,30 @@
+API Documentation will be web-based or included as a PDF in a future version.
+
+Functions available to developers in gaCore:
+    gaCore.displayAnnouncement(prefix, channel, text, sender);
+        prefix - string - The prefix that determines where the message should be displayed
+            GAnnoEF - Message is shown in UIErrorsFrame
+            GAnnoRW - Message is shown as a raid warning
+            GAnnoPop - Message is shown as a popup
+            GAnnoSct - Message is shown in Blizzard Scrolling Combat Text
+            GAnnoSnd - Sound is played
+        channel - string - The channel the message originated from
+            GUILD
+            PARTY
+            RAID
+            BATTLEGROUND
+            WHISPER
+            SYSTEM - Use this for all local messages, does not require a sender
+        text - string - The message to be displayed
+        sender - string - Player the message originated from
+        printchat - boolean - Whether or not the announcement should also be shown in DEFAULT_CHAT_FRAME
+            true - Show in chat (default if omitted)
+            false - Don't show in chat
+
+Variables available to developers in gaBroadcaster:
+    See GlobalAnnounce_Broadcaster\events_enUS.lua
+        
+Other notes:
+    * Prefix a sound path or ID with the at symbol (@) to prevent it from showing a message in the chat window, even if the user has verbose mode enabled.  Use with care.  This breaks backwards compatibility prior to version 0.8.1.  Users may override this option, but not by default.
+    * Prefix a sound path or ID with the pound symbol (#) to have the sound played even while game sound is muted.  This breaks backwards compatibility prior to version 0.8.1.  Users may override this option, but not by default.  If also using the @ symbol, ensure that this one is placed after it.
+    * It is highly recommended to use paths for sounds, as ID's can change between patches.
