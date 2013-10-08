@@ -1,4 +1,4 @@
-## Interface: 40300
+## Interface: 50400
 ## Title: Global Announce |cFF267EFF[Core]|r
 ## Notes: Provides abilities for players in a group, raid, guild, or battleground to send you a more noticeable message.
 ## Author: Mysticell
